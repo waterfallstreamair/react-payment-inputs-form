@@ -1,25 +1,36 @@
-import logo from './logo.svg';
+import React from 'react'
+import PaymentInputs from './PaymentInputs';
+//import { PaymentInputsWrapper, usePaymentInputs } from 'react-payment-inputs';
+//import images from 'react-payment-inputs/images';
+
+//import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 function App() {
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+          <PaymentInputs />
       </header>
     </div>
   );
 }
 
 export default App;
+
+/*
+
+
+
+
+export default function PaymentInputs() {
+  
+
+  return (
+    
+  );
+}
+
+*/
